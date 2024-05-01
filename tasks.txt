@@ -1,0 +1,22 @@
+1.Escolher três arquiteturas diferentes
+
+a) O trabalho “padrão”, que possui a infra estrutura já disponível, composto pela arquitetura de propósito geral ARM, os processadores DSP da família Blackfin e os microcontroladores 8051. Para a arquitetura ARM, modelar da forma mais fiel possível os processadores escolhidos utilizando o simulador gem5. Para as demais arquiteturas, utilize os simuladores dedicados.
+Tiago ARM Graviton (configurar) - Feito.
+Gabriel DSP (configurar)
+Gabriel 8051 (configuração pronto)
+
+2. Buscar os seguintes dados sobre as arquiteturas consideradas: custo (em dólares), frequência de operação, potência média dissipada.
+Gabriel ARM, DSP, 8051.
+ 
+3. Desenvolver/achar três algoritmos que ataquem, na sua concepção, três campos diferentes. 
+Tiago a) Criptografia AES/MD5.
+Tiago b) Busca e inserção aleatória em HashMaps.
+Tiago c) Haar wavelet.
+
+Analise
+4. o desafio é selecionar quais delas você colocaria em cada arquitetura, executando cada um dos algoritmos, de acordo com uma dada restrição, discutida nos passos seguintes.
+5. Para estes dois cenários de execução de aplicação anteriores, verifique qual oference o melhor desempenho, a melhor energia e EDP.
+6. Considere que queremos a melhor relação entre custo.
+
+Tiago Definir os esqueleto da apresentação
+* Apresentação.

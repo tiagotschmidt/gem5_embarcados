@@ -9,6 +9,7 @@ from optparse import OptionParser
 from ARM_A7  import A7_System
 from ARM_A9  import A9_System
 from ARM_A15 import A15_System
+from ARM_A72 import ARM72_System
 
 addToPath('../common/')
 #import Options
@@ -39,6 +40,8 @@ if options.cpu:
         system = A9_System()
     elif options.cpu == "ARM_A15":
         system = A15_System()
+    elif options.cpu == "ARM_A72":
+        system = ARM72_System()
     else:
         print("Unknown CPU: %s" %(options.cpu))
 else:
