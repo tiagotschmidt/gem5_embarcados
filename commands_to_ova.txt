@@ -1,0 +1,3 @@
+build/ARM/gem5.opt emb/st_sim.py -c emb_exemplo/md5/hello_world --cpu ARM_A72; mv m5out/stats.txt ~/results/; cp ~/results/stats.txt ~/results/hello_world.txt; rm ~/results/stats.txt
+build/ARM/gem5.opt emb/st_sim.py -c emb_exemplo/md5/fernando_p --cpu ARM_A72; mv m5out/stats.txt ~/results/; cp ~/results/stats.txt ~/results/fernando_p.txt; rm ~/results/stats.txt
+build/ARM/gem5.opt emb/st_sim.py -c emb_exemplo/md5/frankenstein --cpu ARM_A72; mv m5out/stats.txt ~/results/; cp ~/results/stats.txt ~/results/frankenstein.txt; rm ~/results/stats.txt
