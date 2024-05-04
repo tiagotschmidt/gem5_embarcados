@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# Loop 100 times
+for i in {1..100}; do
+	# Execute the commando
+	build/ARM/gem5.opt emb/st_sim.py -c emb_exemplo/game_of_life/game_of_life_small  --cpu ARM_A72
+
+	# Move and rename stats.txt
+	mv m5out/stats.txt ~/results/
+	cp ~/results/stats.txt ~/results/game_of_life_small_$i.txt # Add counter to filename
+	rm ~/results/stats.txt
+done
+
+echo "Done executing benchmark."

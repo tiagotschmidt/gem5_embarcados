@@ -4,7 +4,7 @@
 #include <time.h>
 #include <unistd.h>
 
-#define GAME_SIZE 10
+#define GAME_SIZE 90
 #define TRUE 1
 #define FALSE 0
 #define TOTAL_ITERATIONS 1
