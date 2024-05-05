@@ -10,7 +10,7 @@ Gabriel ARM, DSP, 8051.
  
 3. Desenvolver/achar três algoritmos que ataquem, na sua concepção, três campos diferentes. 
 [X] Tiago a) Criptografia AES/MD5.
-[ ] Tiago b) Conway's game of life.
+[X] Tiago b) Conway's game of life.
 [ ] Tiago c) Haar wavelet.
 
 Analise
