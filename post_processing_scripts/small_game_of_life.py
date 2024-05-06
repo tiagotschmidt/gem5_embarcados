@@ -65,7 +65,7 @@ def main():
     data_sym_ints = []
     data_overall_misses = []
     for filename in os.listdir():
-        if filename.startswith("game_of_life_large_") and filename.endswith(".txt"):
+        if filename.startswith("game_of_life_small_") and filename.endswith(".txt"):
             cpu_cycles = get_cpu_cycles(filename)
             if cpu_cycles:
                 data_cpu_cycles.append(cpu_cycles)
@@ -90,7 +90,7 @@ def main():
     median_misses = statistics.median(data_overall_misses)
     stddev_misses = statistics.stdev(data_overall_misses)
 
-    with open("large_game_of_life_statistics.txt", 'w') as f:
+    with open("small_game_of_life_statistics.txt", 'w') as f:
         f.write("Average CPU Cycles: {}\n".format(average_cycles))
         f.write("Median CPU Cycles: {}\n".format(median_cycles))
         f.write("Standard Deviation CPU Cycles: {}\n".format(stddev_cycles))
@@ -102,7 +102,7 @@ def main():
         f.write("Median CPU L1 misses:: {}\n".format(median_misses))
         f.write("Standard Deviation CPU L1 misses:: {}\n".format(stddev_misses))
 
-    print("Statistics saved to large_game_of_life_statistics.txt")
+    print("Statistics saved to small_game_of_life_statistics.txt")
 
 
 if __name__ == "__main__":
