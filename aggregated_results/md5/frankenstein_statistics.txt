@@ -1,0 +1,9 @@
+Average CPU Cycles: 490271
+Median CPU Cycles: 490271.0
+Standard Deviation CPU Cycles: 0.0
+Average Simulation Instructions: 727936
+Median Simulation Instructions: 727936.0
+Standard Deviation Simulation Instructions: 0.0
+Average CPU L1 misses: 891
+Median CPU L1 misses:: 891.0
+Standard Deviation CPU L1 misses:: 0.0
