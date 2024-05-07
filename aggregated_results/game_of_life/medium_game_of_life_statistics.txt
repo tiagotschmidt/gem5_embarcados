@@ -5,5 +5,5 @@ Average Simulation Instructions: 5757651
 Median Simulation Instructions: 5757651.0
 Standard Deviation Simulation Instructions: 0.0
 Average CPU L1 misses: 1536
-Median CPU L1 misses:: 1536.0
-Standard Deviation CPU L1 misses:: 0.0
+Median CPU L1 misses: 1536.0
+Standard Deviation CPU L1 misses: 0.0
