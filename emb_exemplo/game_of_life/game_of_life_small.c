@@ -1,8 +1,6 @@
-#include <stdint.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include <unistd.h>
 
 #define GAME_SIZE 10
 #define TRUE 1
@@ -13,8 +11,10 @@
 void init_game_matrix(int game_matrix[GAME_SIZE][GAME_SIZE]) {
   srand(time(NULL));
 
-  for (int i = 0; i < GAME_SIZE; i++) {
-    for (int j = 0; j < GAME_SIZE; j++) {
+  int i;
+  for (i = 0; i < GAME_SIZE; i++) {
+    int j;
+    for (j = 0; j < GAME_SIZE; j++) {
       game_matrix[i][j] = FALSE;
 
       int random_integer = rand() % 100;
@@ -27,8 +27,10 @@ void init_game_matrix(int game_matrix[GAME_SIZE][GAME_SIZE]) {
 }
 
 void print_game_matrix(int game_matrix[GAME_SIZE][GAME_SIZE]) {
-  for (int i = 0; i < GAME_SIZE; i++) {
-    for (int j = 0; j < GAME_SIZE; j++) {
+  int i;
+  for (i = 0; i < GAME_SIZE; i++) {
+    int j;
+    for (j = 0; j < GAME_SIZE; j++) {
       if (game_matrix[i][j]) {
         printf("X");
       } else {
@@ -41,8 +43,10 @@ void print_game_matrix(int game_matrix[GAME_SIZE][GAME_SIZE]) {
 
 void update_game_matrix(int game_matrix[GAME_SIZE][GAME_SIZE]) {
   srand(time(NULL));
-  for (int i = 0; i < GAME_SIZE; i++) {
-    for (int j = 0; j < GAME_SIZE; j++) {
+  int i;
+  for (i = 0; i < GAME_SIZE; i++) {
+    int j;
+    for (j = 0; j < GAME_SIZE; j++) {
       int left_neighbour = FALSE;
       int right_neighbour = FALSE;
       int up_neighbour = FALSE;
@@ -108,8 +112,9 @@ int main() {
 
   init_game_matrix(game_matrix);
 
-  for (int _i = 0; _i < TOTAL_ITERATIONS; _i++) {
-    //print_game_matrix(game_matrix);
+  int _i;
+  for (_i = 0; _i < TOTAL_ITERATIONS; _i++) {
+    // print_game_matrix(game_matrix);
     update_game_matrix(game_matrix);
   }
 }
