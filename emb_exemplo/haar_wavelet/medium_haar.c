@@ -24,7 +24,7 @@ int main(int argc, char *argv[]) {
   FILE *in;
   FILE *out;
 
-  in = fopen("mediu_image.in", "rb");
+  in = fopen("medium_image.in", "rb");
   if (in == NULL) {
     perror("image.in");
     exit(EXIT_FAILURE);

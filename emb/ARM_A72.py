@@ -53,7 +53,7 @@ class ARM_A72_L1D_Cache(Cache):
 
 class ARM_A72_L2_Cache(Cache):
 
-    size = '8MB'
+    size = '512kB'
     assoc = 64
     tag_latency = 20
     data_latency = 20
