@@ -1,0 +1,5 @@
+blackfin 544:
+    large:  144550079 ciclos
+    medium:  18554396 ciclos
+    small:     231482 ciclos
+
