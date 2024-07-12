@@ -1,0 +1,4 @@
+blackfin 544:
+    small:      73911 cycles
+    medium:   6616172 cycles
+    large:   20325710 cycles
