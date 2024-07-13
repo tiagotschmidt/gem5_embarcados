@@ -1,0 +1,4 @@
+Blackfin 544:
+	hello_world:    16290
+	fernando_p:     58977
+	frankenstein: 1144290
